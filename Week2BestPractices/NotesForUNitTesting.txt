@@ -1,0 +1,51 @@
+#Syntax codes:
+
+*Sample test method structure (groovy)
+    def "<methodName : can be string>"{
+        when:
+        <when s*tatement>
+
+        then:
+        <then statement>
+
+        where: 
+        <where statement>
+    }
+
+    //example 
+    def "should expect an error to be thrown for a number of invalid input: #sides"() {
+        when:
+        int countSides = new Polygon(sides).numberOfSides
+
+        then:
+        countSides >= 4
+
+        where:
+        sides << [1, 2, 3, 4, 5, 6, 7, 8, 9]
+    }
+
+
+*WHEN statement - is used to call and set the method/function that you want to test
+*THEN statement - used to indicate what is to be expected as output (or return) of the function/method
+*WHERE statement - is used when there are multiple set values that are input for testing a function/method
+
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Definitions and explanations:
+1. "unit test is usually a mehtod that validates a small portion of the source code"
+2. "Comparison of actual and expected results"
+3.  Fast - a single project can contain a big number of unit tests, even hundreds or thousands.
+4.  Isolated - a unit test shoudn't modify or depend on any external state.
+5.  Deterministic - should always return the same result no matter how many times we execute it. Nothing is changed between runs.
+6.  Readable- unit test code are that needs to be maintained. Therefore, it should be clear and easily understandable.
+7.  Simple - often we can read that the unit test should contain a single assertion. 
+8.  Documentation - Well written test work just as well as documentation. They should paint a good picture of what a function does or how it is used.
+9. 
+
+
+
+#Commands:
+*sh gradlew test
+
+homework: do the unit testing for the address and then the person class (tests for the getters and setters)

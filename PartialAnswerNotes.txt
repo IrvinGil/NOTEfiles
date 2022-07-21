@@ -1,0 +1,14 @@
+#Have you ever thought about clean code? If yes, how 
+and what practices do you use? If not, how do you now view
+the code you've written and read in the past?
+
+>> Yes, I have thought about clean code or perhaps some other 
+ways or methods to make your code make sense and not just for your own reading comfort. 
+During my third year in college, I started by naming my methods after what they were supposed to 
+do and separating them from reserved programming words. Such examples are "RetrieveUserAccountNumbers" 
+instead of "getUserAccountNumbers" because it might confuse the compiler from the reserved word for 
+getters and setters. And as time passed and as I continued to apply such practice, I shared it with my 
+groupmates during our thesis project so that it would promote the collaboration and readability of each 
+other's codes and lessen the time needed to discuss each other's codes. Although my current coding skills 
+are still far from making a decent "clean code," I am glad that I have applied some of the practices of 
+clean code during my college time.
