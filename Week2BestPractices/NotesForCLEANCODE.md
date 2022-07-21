@@ -1,12 +1,12 @@
-#Clean Code:
+# Clean Code:
 1. "Like well written prose"
 2. "Written by someone who cares"
 3. "Does one thing well"
 4. "It's testable"
 
->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+-------------------------------------------------------------------
 
-##Why write clean code?
+## Why write clean code?
 1. "It encourages collaboration"
 2. "We write solutions, not code"
 3. "Code is read by people"
@@ -15,14 +15,14 @@
 
 
 
-##What clean code is not:
+## What clean code is not:
 1. "There's no one way to do it"
 2. " 
 
 
 
 
-##Clean Code Advantages:
+## Clean Code Advantages:
 1. Improves code reusability
 2. Lessens the probability of bugs due to the reusability of "already tested" code
 3. Small functions makes it easy to indentify and locate bugs.
@@ -39,24 +39,24 @@
     * and overall easy to maintain
 6. Low complexity
 
->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+-------------------------------------------------------------------
 
 
 
-##Some Clean Code Rules:
+## Some Clean Code Rules:
 1. Single Responsibility Principle: A method/funtion should have one responsibility
 2. Write code in small functions.
 
->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+-------------------------------------------------------------------
 
-##NAMING CONVENTIONS
+## NAMING CONVENTIONS
 
 *Some rules in variable naming 
 
 
 
 
->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+-------------------------------------------------------------------
 
 ###Note:
 1. will use spock as framework for unit testing!
