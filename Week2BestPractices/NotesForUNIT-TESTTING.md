@@ -1,6 +1,7 @@
-#Syntax codes:
+# Syntax codes:
 
-*Sample test method structure (groovy)
+* Sample test method structure (groovy):
+    ```
     def "<methodName : can be string>"{
         when:
         <when s*tatement>
@@ -11,8 +12,10 @@
         where: 
         <where statement>
     }
+    ```
 
-    //example 
+* Another example:
+    ```
     def "should expect an error to be thrown for a number of invalid input: #sides"() {
         when:
         int countSides = new Polygon(sides).numberOfSides
@@ -23,15 +26,22 @@
         where:
         sides << [1, 2, 3, 4, 5, 6, 7, 8, 9]
     }
+    ```
+    
 
 
-*WHEN statement - is used to call and set the method/function that you want to test
-*THEN statement - used to indicate what is to be expected as output (or return) of the function/method
-*WHERE statement - is used when there are multiple set values that are input for testing a function/method
+# Spock Unit Test Syntax
+
+## WHEN statement 
+is used to call and set the method/function that you want to test
+## THEN statement
+used to indicate what is to be expected as output (or return) of the function/method
+## WHERE statement
+is used when there are multiple set values that are input for testing a function/method
+
+-------------------------------------------------------------------
 
 
-
->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 Definitions and explanations:
 1. "unit test is usually a mehtod that validates a small portion of the source code"
 2. "Comparison of actual and expected results"
@@ -45,7 +55,9 @@ Definitions and explanations:
 
 
 
-#Commands:
-*sh gradlew test
+# Commands:
+```
+sh gradlew test
+```
 
-homework: do the unit testing for the address and then the person class (tests for the getters and setters)
+## homework: do the unit testing for the address and then the person class (tests for the getters and setters)
