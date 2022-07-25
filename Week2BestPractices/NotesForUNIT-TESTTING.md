@@ -195,6 +195,25 @@
         renderer.getForegroundColour() == Colour.Red
     }
     ```
+## Mocking syntax examples
+In this example, the addresss is mocked so that we can test if the `personRepository.save` is invoked once.
+```
+def "addPerson should save the new person."() {
+        given:
+        Address address = Mock()
+
+        when:
+        service.addPerson("Kenichi", 32, address, Sex.MALE)
+
+        then:
+        1 * personRepository.save(_) >> {Person passedPerson ->
+            assert "Kenichi" == passedPerson.name
+            assert 32 == passedPerson.age
+            assert address == passedPerson.address
+            assert Sex.MALE == passedPerson.sex
+        }
+    }
+```
 
 
 # Spock Unit Test Syntax
@@ -218,7 +237,7 @@ Definitions and explanations:
 6.  Readable- unit test code are that needs to be maintained. Therefore, it should be clear and easily understandable.
 7.  Simple - often we can read that the unit test should contain a single assertion. 
 8.  Documentation - Well written test work just as well as documentation. They should paint a good picture of what a function does or how it is used.
-9. 
+9. One thing of unit testing is to keep the test **ISOLATED** or class **ISOLATED**
 
 
 
@@ -227,4 +246,12 @@ Definitions and explanations:
 sh gradlew test
 ```
 
-## homework: do the unit testing for the address and then the person class (tests for the getters and setters)
+
+
+
+## Company standard for assert code
+* In writting code for unit testing (Assert)
+    ```
+    assert <expected> == <actual>
+    ```
+* The ones or the authors of the `class, code, methods` is the ones to write the test for them.

@@ -1,0 +1,5 @@
+Problem1 1
+    Description:
+    Create a class that determines whether a number passed is:
+        a. Even or Odd number
+        b. a Prime number

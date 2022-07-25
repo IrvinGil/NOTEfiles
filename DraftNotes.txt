@@ -1,0 +1,44 @@
+YAGNI principle. - "You Aren't Gonna Need it"
+KISS - "Keep It Simple Stupid"
+
+
+Coupling - dependency of class to each other
+Cohesion - keeping related things close to each other
+
+DRY - "dont repeat yourself"
+
+IDEAL CODE:
+1. Code should be High cohesion and less coupling.
+    Use delegation approach ( )
+2. cost for DRY is "coupling" || the more dry you are the more you are highly coupled
+3. "inplementation inheritance is bad" || "interface inheritance is good"
+4. "DRY means having a single authoritative source of truth"
+5. "Ask, dont tell"
+
+
+ctr+d - duplicate
+ctr+y - delete line
+ 
+
+>>>>>>>>>>>>>>>>>>>>>..
+to avoid more coupling
+
+1. composition approach
+
+
+
+"interface is a contract"
+
+## tips
+@ Deprecated
+
+
+Law of Demeter - principle of least knowledge || "dont know internal parts" || 
+
+Dependency Injection:
+- flexibility
+- increases complexity
+
+
+TDD related:
+>>> Read > Green > Refactor 

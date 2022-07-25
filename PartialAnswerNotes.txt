@@ -1,14 +1,47 @@
-#Have you ever thought about clean code? If yes, how 
-and what practices do you use? If not, how do you now view
-the code you've written and read in the past?
+1. static factory methods vs conventional constructors
+    a. what are the key advantages of using static factory methods over constructors.
+    b. when can we say that need to use static factory methods?
 
->> Yes, I have thought about clean code or perhaps some other 
-ways or methods to make your code make sense and not just for your own reading comfort. 
-During my third year in college, I started by naming my methods after what they were supposed to 
-do and separating them from reserved programming words. Such examples are "RetrieveUserAccountNumbers" 
-instead of "getUserAccountNumbers" because it might confuse the compiler from the reserved word for 
-getters and setters. And as time passed and as I continued to apply such practice, I shared it with my 
-groupmates during our thesis project so that it would promote the collaboration and readability of each 
-other's codes and lessen the time needed to discuss each other's codes. Although my current coding skills 
-are still far from making a decent "clean code," I am glad that I have applied some of the practices of 
-clean code during my college time.
+2. what does immutable object means?
+3. 
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+2. On what projects/instance were you able to use this programming language?
+>> During our thesis project, we used the C++ programming language to program the Arduino microcontroller of our prototype. My experience with 
+The python was only with exercises related to our subject. And my experience with Java was when we were tasked to make a class schedule in
+system as our final project for our software design course.
+
+## DATA ANALYTICS
+1. Tell me about a research or case study you have done that involves data analysis.
+>> I never used any complicated data analysis methods, but we did use Microsoft Excel software to sort and analyze data during our thesis project.
+We incorporated the use of Microsoft Excel to keep track of and analyze the electrical parameter readings of our test equipment to analyze the 
+results of our study findings, such as getting the percentage error of our prototype data. During our case study, I also did data analysis when 
+processing the results of the survey questions that were answered by the respondents.
+
+2. What statistical tests and procedures did you use to analyze the data?
+>> During our thesis project, we used the data readings from an industry standard multimeter as a reference to compare the data findings.
+of our system prototype in order to determine whether the percentage error between the two is within an acceptable range.
+We have run three trials for each of the five different appliances that we tested with our prototype system. We got the average data of the 
+test trials and calculated the percentage error using a software tool to ease the data analysis process.
+
+3. What statistical software did you use to run the statistical test?
+>> We used Microsoft Excel software to help us with analyzing the data. We also used the same software tool to analyze the data of user 
+rating with our system prototype to know whether the impact of the system is positive for the users or not.
+
+## APP SUPPORT/SERVICE DESK
+1. Tell me about a time when you had to troubleshoot a software or program?
+>> When it comes to softwares that we have developed, we never had a real experience of troubleshooting. Because when a problem on
+the software system arises or has been encountered, it is usually due to programmer error. But i do encountered some computer software
+related problems such as my own pc slowing down.
+
+2. What were the steps you did in troubleshooting?
+>> There was this one time that my computer was really slow and late in responding to my mouse and keyboard clicks and also when opening 
+software applications. So I opened Task Manager to take a look at what software processes were slowing down my computer. It turns out it was
+a problem with 100% disk utilization. So I did some research on the internet and I followed a youtube video on how to solve it.
+a "100% disk utilization problem". The steps that I took to troubleshoot the problem were
+
+IdentifyTheProblem >> 
+ResearchAboutTheProblem >>
+EstablishAPlanOfAction >> 
+TrySolvingTheProblemWithTheInformationAcquired 
