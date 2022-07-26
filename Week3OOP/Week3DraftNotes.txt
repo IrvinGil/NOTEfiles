@@ -1,0 +1,34 @@
+## Dependency Injection in Java
+
+ 1. A solution to loosen the coupling between classes.
+ 2. 
+
+
+ >>>>>>>>>>>>>>>>>>>>>>>>..
+
+# Benefits of Java Dependency Injection
+Some of the benefits of using Dependency Injection in Java are:
+
+* Separation of Concerns
+* Boilerplate Code reduction in application classes because all work to initialize dependencies is handled by the injector component
+* Configurable components makes application easily extendable
+* Unit testing is easy with mock objects
+* Disadvantages of Java Dependency Injection
+
+# Java Dependency injection has some disadvantages too:
+
+*If overused, it can lead to maintenance issues because the effect of changes are known at runtime.
+* Dependency injection in java hides the service class dependencies that can lead to runtime errors that would have been caught at compile time.
+
+
+
+
+>>>
+1. Lambda is just doing what an ANONYMOUS class is doing
+2. use stream and any match when iterating through lists
+3. use "enum" for classes that have definite choices or options (eg. male and female)
+4. Static factory helps because you can name it and describe what its doing with their names.
+    this improves readability.
+5. Builder pattern allows you to create objects without the need for
+    coding the constructor for the specific combination.
+6. 
