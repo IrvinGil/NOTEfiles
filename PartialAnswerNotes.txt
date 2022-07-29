@@ -7,41 +7,43 @@
 
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
-2. On what projects/instance were you able to use this programming language?
->> During our thesis project, we used the C++ programming language to program the Arduino microcontroller of our prototype. My experience with 
-The python was only with exercises related to our subject. And my experience with Java was when we were tasked to make a class schedule in
-system as our final project for our software design course.
+# What i learned as a newbie to the software development industry in terms of
 
-## DATA ANALYTICS
-1. Tell me about a research or case study you have done that involves data analysis.
->> I never used any complicated data analysis methods, but we did use Microsoft Excel software to sort and analyze data during our thesis project.
-We incorporated the use of Microsoft Excel to keep track of and analyze the electrical parameter readings of our test equipment to analyze the 
-results of our study findings, such as getting the percentage error of our prototype data. During our case study, I also did data analysis when 
-processing the results of the survey questions that were answered by the respondents.
+## Applying for jobs:
+1. "The job hunting field is a sea, it never runs out of fish"
+    Don't feel like being left behind when applying for a job. There are plenty of job offer sites nowadays. Just stop overthinking, work on
+    your resume, and prepare. Doing something is better than doing nothing.
+2. "Don't bite more than you could chew"
+    I would advice not to sugarcoat the effort applying for many jobs on a small span of time because it could be sometimes overwhelminig.
+    The goal of the feat is to get hired, not to collecting job application experience. Just select the ones you are confortable with and
+    focus. Don't excert effort on the ones you ain't gonna need.
 
-2. What statistical tests and procedures did you use to analyze the data?
->> During our thesis project, we used the data readings from an industry standard multimeter as a reference to compare the data findings.
-of our system prototype in order to determine whether the percentage error between the two is within an acceptable range.
-We have run three trials for each of the five different appliances that we tested with our prototype system. We got the average data of the 
-test trials and calculated the percentage error using a software tool to ease the data analysis process.
 
-3. What statistical software did you use to run the statistical test?
->> We used Microsoft Excel software to help us with analyzing the data. We also used the same software tool to analyze the data of user 
-rating with our system prototype to know whether the impact of the system is positive for the users or not.
+## Interview Expectations:
+1. "They are just asking you what you know, not on what you can do"
+    You don't ask a 6 year old child whether he knows how to cook. You ask whether he/she can distinguish the tools and resource for cooking.
+    Possesing advance knowledge is an advantage but in reality you have to start from scratch and learn things the way how your employer
+    taught you. Just focus on being doing best in an interview.
+2. "Always pace yourself with your interviewer"
+    Just imagine an interview as having a tour with the pope. You pace yourself with their mood otherwise your actions will make your
+    tour awkward. I still believe that "first impression lasts". Just try to be nice and have a good conversation.
+3. 
 
-## APP SUPPORT/SERVICE DESK
-1. Tell me about a time when you had to troubleshoot a software or program?
->> When it comes to softwares that we have developed, we never had a real experience of troubleshooting. Because when a problem on
-the software system arises or has been encountered, it is usually due to programmer error. But i do encountered some computer software
-related problems such as my own pc slowing down.
+## Job Salary:
+1. "People always change for greener pastures"
+    Sometimes you feel like you are undervalue because your friends have high paid jobs than yours. Jumping from one company to another is 
+    not really suprising in the employment world. What's important is that you leave a good impression in whatever company you work on and 
+    not just because you are after your salary.
+2. "High pay equates to higher responsibility"
+    In reality, high paid employees have 2x or 5x more responsibility and work than their subordinates. They don't just climb the status ladder,
+    proved themselves to be there and they got the skills to show.
 
-2. What were the steps you did in troubleshooting?
->> There was this one time that my computer was really slow and late in responding to my mouse and keyboard clicks and also when opening 
-software applications. So I opened Task Manager to take a look at what software processes were slowing down my computer. It turns out it was
-a problem with 100% disk utilization. So I did some research on the internet and I followed a youtube video on how to solve it.
-a "100% disk utilization problem". The steps that I took to troubleshoot the problem were
-
-IdentifyTheProblem >> 
-ResearchAboutTheProblem >>
-EstablishAPlanOfAction >> 
-TrySolvingTheProblemWithTheInformationAcquired 
+## Skills and Work experience:
+1. "You will start at the same level as everyone else"
+    Don't overthink much and just focus trying to learn and absorb all things taught to you. Remain observant and always know your workplace mood.
+    Even if someone has work experience, but is also a newly hired same as you. You are still on the same boat. He can maybe row faster, 
+    but you both are still on the same boat(level). 
+2. "You don't treat your workmates like how you treat your classmates"
+    Things are different in the softdev field. You must exert extra effort to understand his work and behavior because it might be reflected 
+    to how he is doing his work. You could be working with your workmates for 5 years so it is important not to create misunderstandings and
+    barrier with anyone of them.
