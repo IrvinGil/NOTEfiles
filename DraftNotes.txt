@@ -27,10 +27,64 @@ Things to talk with froi later:
 6. Avoid creating unnecessary objects
 
 
->>>>>>>>>>>>>>>>>>>>>......
-* do on git ignore: 
 
-business rules:
-1. only accept php
-2. if amount of payments >1M, then flag fail
-3. 
+
+>>>>>>>>>>>>>>>
+Mentor: Chuck Saliente
+
+
+Spring Notes:
+
+- String and Spring boot are application framework
+- application framework helps developers in simplifying works in writting boilerplate codes:
+    - framework are bundles of codes that are used by devs and save them by not codding from scratch
+- spring is the core technology used by spring boot. the difference being that spring is more flexible than spring boot, spring being the
+    native (framework).
+- 
+
+Spring features:
+- Light weight
+- Aspect Oriented Programming
+- Transaction Manageement
+- Container
+- Dependecy Injection
+
+
+Spring bean - instance of a class that is managed by spring
+
+Spring Container:
+    - BeanFactory
+    - ApplicationContext
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
