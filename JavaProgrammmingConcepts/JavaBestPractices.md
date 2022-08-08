@@ -14,3 +14,4 @@
 4. Enforce noninstiability with a private constructor.
 5. Prefer dependency injection to hardwirring resources
 6. Avoid creating unnecessary objects.
+7. When choosing a version, safe to do is to use the version one level below because it is more stable.

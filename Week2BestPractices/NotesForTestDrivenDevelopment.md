@@ -19,11 +19,25 @@ Test Driven Development is an approach to software development in which the unit
 2. *"It can feel unnecesary"*
 
 
+## Software Requirements:
+Software must do three things:
+ - "It must work"
+ - "It must be understandable"
+ - "It must be updatable"
+
+## Flow of Test Driven Development (TDD):
+RED -> GREEN -> REFACTOR
+1. *"Write a failing test (RED)"*
+2. *"Do the **minimum** to pass the test (GREEN)"*
+3. *"Remove any duplication (Refactor)"*
+
+#### **Refactoring** - Refactoring is the process of changing a software system in such a way that it does not alter the external behavior of the code yet improve its internal structure. **-Martin Fowler**
 ----
+
 1. You can't test static methods, you can call it on another class and then write test for that class. *(Important note: you cannot stub a static method. You can **"WRAP"** it in another method and stub that method.)*
 2. You must write tests for methods that have decission making functions.
 3. Practiced company format for unit testing (then):
-    
+
     ```
     assert <expected> == <actual>
     ```

@@ -58,6 +58,33 @@ Spring Container:
 
 
 
+//note: add this to TDD Notes
+
+Software Requirements:
+    Software must do three things:
+    - "It must work"
+    - "It must be understandable"
+    - "It must be updatable"
+
+Flow of TDD (RED - GREEN - REFACTOR):
+    "Write a failing test"
+    "Do the MINIMUM to pass the test"
+    "refactor() Remove any duplication"
+
+Refactoring - Refactoring is the process of changing a software system in
+such a way that it does not alter the external behavior of the code yet improves
+its internal structure. "Martin Fowler"
+
+
+#Tips and techniques:
+    - Break it into components:
+     - Take a minute to write out a few of the components that need to be built
+            (product backlog).
+     - 
+
+
+
+
 
 
 

@@ -1,5 +1,15 @@
 # Syntax codes:
 
+## Dependecy code for unit testing with Spock:
+Note: You must include these dependencies on the `build.gradle` file of the project.
+
+```
+testImplementation 'org.spockframework:spock-core:2.0-groovy-3.0'
+testImplementation 'org.codehaus.groovy:groovy-all:3.0.8'
+```
+
+----
+
 * Sample test method structure (groovy):
     ```
     def "<methodName : can be string>"{

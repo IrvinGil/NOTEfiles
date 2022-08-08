@@ -4,7 +4,7 @@
     * *"A class should have only one reason to change"* -Uncle Bob (Bob Martin)
     * Trying to have high cohesion on a class. The idea is to try and narrow down the behavior a class can have and motivation to re write it.
     
-        <img src="/home/irvin_gil/Documents/NOTEfiles/Week3OOP/MarkDownImageSource/Screenshot from 2022-07-27 07-51-39.png" alt="Single Responsibility Principle Concept" style="height: 400px; width:800px;"/>
+        <img src="MarkDownImageSource/Screenshot from 2022-07-27 07-51-39.png" alt="Single Responsibility Principle Concept" style="height: 400px; width:800px;"/>
 
     ------
 2. **Open/Closed Principle** 
@@ -12,7 +12,7 @@
     * Promotes re-utilization
     * When you split the responsibility of a class, you should do so in a way that behavior can be extended/replaced.
 
-         <img src="/home/irvin_gil/Documents/NOTEfiles/Week3OOP/MarkDownImageSource/Screenshot from 2022-07-27 07-54-54.png" alt="Open/Close Principle Concept" style="height: 400px; width:800px;"/>
+         <img src="MarkDownImageSource/Screenshot from 2022-07-27 07-54-54.png" alt="Open/Close Principle Concept" style="height: 400px; width:800px;"/>
     ------
 3. **Liskov Substitution Principle**
     * *"You should be able to change an instance using a sub-type and your code should still still work"*
@@ -20,7 +20,7 @@
     * Only use inheritance when the super class is replaceable by a subclass in all the instances. Don't use inheritance just to save a few lines  of code.
 
     
-        <img src="/home/irvin_gil/Documents/NOTEfiles/Week3OOP/MarkDownImageSource/Screenshot from 2022-07-27 08-04-21.png" alt="Liskov Principle Concept" style="height: 400px; width:800px;"/>
+        <img src="MarkDownImageSource/Screenshot from 2022-07-27 08-04-21.png" alt="Liskov Principle Concept" style="height: 400px; width:800px;"/>
     ------
 4. **Interface Segragation Principle**
     * More interfaces are better than too little.
@@ -51,12 +51,12 @@
         ```
     
 
-        <img src="/home/irvin_gil/Documents/NOTEfiles/Week3OOP/MarkDownImageSource/Screenshot from 2022-07-27 08-09-01.png" alt="Interface Segregation Concept" style="height: 400px; width:800px;"/>
+        <img src="MarkDownImageSource/Screenshot from 2022-07-27 08-09-01.png" alt="Interface Segregation Concept" style="height: 400px; width:800px;"/>
     ------
 5. **Dependency Inversion**
     * *"One should depend on abstraction and not concrete instances"*
 
-         <img src="/home/irvin_gil/Documents/NOTEfiles/Week3OOP/MarkDownImageSource/Screenshot from 2022-07-27 08-11-24.png" alt="Interface Segregation Concept" style="height: 400px; width:800px;"/>
+         <img src="MarkDownImageSource/Screenshot from 2022-07-27 08-11-24.png" alt="Interface Segregation Concept" style="height: 400px; width:800px;"/>
 
 
 ## Useful java concepts and approaches for SOLID PRINCIPLE

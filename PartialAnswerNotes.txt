@@ -1,49 +1,32 @@
-1. static factory methods vs conventional constructors
-    a. what are the key advantages of using static factory methods over constructors.
-    b. when can we say that need to use static factory methods?
+Scope:
+- basic hello world
+- explain how parts of spring boot work
+- 
 
-2. what does immutable object means?
-3. 
+>>>>
+-when using version, safe to do is to use one version below (stable version)
 
->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+by default spring runs the web app on port 8080.
 
-# What i learned as a newbie to the software development industry in terms of
+front end >> resource/template folder
 
-## Applying for jobs:
-1. "The job hunting field is a sea, it never runs out of fish"
-    Don't feel like being left behind when applying for a job. There are plenty of job offer sites nowadays. Just stop overthinking, work on
-    your resume, and prepare. Doing something is better than doing nothing.
-2. "Don't bite more than you could chew"
-    I would advice not to sugarcoat the effort applying for many jobs on a small span of time because it could be sometimes overwhelminig.
-    The goal of the feat is to get hired, not to collecting job application experience. Just select the ones you are confortable with and
-    focus. Don't excert effort on the ones you ain't gonna need.
+resources (images) >> resource/static folder
 
+SERVICE >> holds the business rule codes
+CONTROLLER >> 
 
-## Interview Expectations:
-1. "They are just asking you what you know, not on what you can do"
-    You don't ask a 6 year old child whether he knows how to cook. You ask whether he/she can distinguish the tools and resource for cooking.
-    Possesing advance knowledge is an advantage but in reality you have to start from scratch and learn things the way how your employer
-    taught you. Just focus on being doing best in an interview.
-2. "Always pace yourself with your interviewer"
-    Just imagine an interview as having a tour with the pope. You pace yourself with their mood otherwise your actions will make your
-    tour awkward. I still believe that "first impression lasts". Just try to be nice and have a good conversation.
-3. 
+>>>>>>>>>>>>>>>>>>.
 
-## Job Salary:
-1. "People always change for greener pastures"
-    Sometimes you feel like you are undervalue because your friends have high paid jobs than yours. Jumping from one company to another is 
-    not really suprising in the employment world. What's important is that you leave a good impression in whatever company you work on and 
-    not just because you are after your salary.
-2. "High pay equates to higher responsibility"
-    In reality, high paid employees have 2x or 5x more responsibility and work than their subordinates. They don't just climb the status ladder,
-    proved themselves to be there and they got the skills to show.
+sudo gedit ~/.bashrc
+//then 
+export FIRST_NAME="Irvin Gil" //edit .bashrc via gedit
 
-## Skills and Work experience:
-1. "You will start at the same level as everyone else"
-    Don't overthink much and just focus trying to learn and absorb all things taught to you. Remain observant and always know your workplace mood.
-    Even if someone has work experience, but is also a newly hired same as you. You are still on the same boat. He can maybe row faster, 
-    but you both are still on the same boat(level). 
-2. "You don't treat your workmates like how you treat your classmates"
-    Things are different in the softdev field. You must exert extra effort to understand his work and behavior because it might be reflected 
-    to how he is doing his work. You could be working with your workmates for 5 years so it is important not to create misunderstandings and
-    barrier with anyone of them.
+//then 
+source ~/.bashrc
+
+//then
+echo $FIRST_NAME
+
+//then run the application
+sh ./gradlew bootRun
+
