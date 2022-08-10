@@ -1,32 +1,70 @@
-Scope:
-- basic hello world
-- explain how parts of spring boot work
+- REST means "REpresentational State Transfer".
+- Web service connects and allow integration with existing web applications much like a library
+- In a REST API request, a JSON is returned as the response from the server.
+- Content type of restful web services:
+    + JSON
+    + XML
+- content type in SOAP is strictly XML. If one thing is not properly defined, then the application would not run. (SOAP) Pretty much stricter than REST
+- Compared to soap, rest is not strict and is more of a guideline. Rest has best practices.
+- endpoint is a function that can be used by the consumer (of the API).
+
+
+Uniform Resource Identifier (URI)
+- every source is identified by a unique identifier (URI).
 - 
+    + rest is very resource oriented. focused on object instead of action.
+    + Best practice is to use nouns in Restful. 
+        ```/profile/{profileId}``` instead of   ```/getProfile?id=1```
+        ```/profile/{profileId}``` instead of ```/deactivateProfile```
+        //ways to distinguish the command is through http methods (get, post, put, delete).
 
->>>>
--when using version, safe to do is to use one version below (stable version)
+    + best practice is to use version:
+        /api/v1/profile/{profileId}
 
-by default spring runs the web app on port 8080.
+- sample of resource URI's:
+    + /api/v1/student/{student}
+    + /api/v1/grade/{gradeId}   ||  /api/v1/student/{student}/grade/{gradeId}
 
-front end >> resource/template folder
 
-resources (images) >> resource/static folder
+- Filtering Collections:
+    + Use Pagination:
+        `/api/v1/student?page=1&max=10`
+    + Use resource fields:
+        `/api/v1/student?yearLevel=3`  (in this example, querry parameter is used to filter out the data being responded to the client)
 
-SERVICE >> holds the business rule codes
-CONTROLLER >> 
+- Common HTTP methods:
+    + GET 
+    + POST 
+    + PUT (update; primarily used for updating resources)
+    + DELETE
 
->>>>>>>>>>>>>>>>>>.
 
-sudo gedit ~/.bashrc
-//then 
-export FIRST_NAME="Irvin Gil" //edit .bashrc via gedit
+- "Resource means the objects being exposed"
+- If you do a PUT request: you have to specify everythings else even though you just want to update one field.
 
-//then 
-source ~/.bashrc
+- Idempotent - kung mangyayari sya, safe ba sya? or hindi ba ito makaka affect kahit ilang ulit ito ginagawa (invoked). 
+    - Idempotent methods: GET, DELETE, PUT || Non-idempotent: POST
 
-//then
-echo $FIRST_NAME
+- Patch (more of like put) but different as in patch you only indicate the field that you will change. And also patch is considered not safe and somehow considered non-idempotent.
+- HTTP Status Code:
+    + 1XX - Informational
+    + 2XX - Success
+        * 200 - Ok
+        * 201 - Created
+        * 202 - Accepted
+        * 204 - No Content
+    + 3XX - Redirect
+        * 301 - Moved Permanently
+    + 4XX - Client Error
+        * 400 - Bad Request 
+        * 401 - Unauthorized
+        * 403 - Forbidden
+        * 404 - Not Found
+        * 422 - Unprocessable Entity
+    + 5XX - Server Error
+        * 500 - Internal Server Error
 
-//then run the application
-sh ./gradlew bootRun
 
+>>>>>>>>>>>>>>>>
+
+separate the endpoints on separate files for designated functionality.
