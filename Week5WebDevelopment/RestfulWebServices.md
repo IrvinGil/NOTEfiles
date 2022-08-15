@@ -98,4 +98,15 @@ This will load the following fields:
 ```URI
 /api/v1/order?dateOrdered={date}&max=5&page=1
 ```
+---
+## Useful dependecies for spring boot web project:
+1. **#Lombok**: dependency used to simplify the use of ***getters and setters***.
+```build.gradle
+	compileOnly 'org.projectlombok:lombok'
+	annotationProcessor 'org.projectlombok:lombok'
+```
+2. **Guava Core Libraries for Java:** Guava is a set of core Java libraries from Google that includes new collection types (such as multimap and multiset), immutable collections, a graph library, and utilities for concurrency, I/O, hashing, caching, primitives, strings, and more! It is widely used on most Java projects within Google, and widely used by many other companies as well.
 
+```build.gradle
+implementation 'com.google.guava:guava:31.1-jre'
+```
