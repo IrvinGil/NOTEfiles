@@ -1,11 +1,47 @@
 
+---
+
+
+1. @RestControllerAdvice - allows us to handle exception across all application
+
+
+422 response code for the product with existing name on the database ( the response message is up to you )
 
 
 
->>>>>>>>>>>>>>>
-questions: 
-1. what really comes first or what is the order of devlopment process that is taken when developing a new project.
-2. 
+- The spec/test classes that are in the /test directory contains tests for classes with public
+access modifiers. But you can also add test for the methods that are have package level access
+modifiers and just put the spec/test file on the same package directory.
+
+*how to validate request body or request parameters*
+Answer: @NotNull //Bean Validation package
+
+
+advice:
+- splice functions into small unit and somehow separate it into another class to keep the methods small
+and unit test can be easily made into the function.
+- unit test also serve as a documentation, so make the unit test name as descriptive as possible.
+- 
+
+>>>>>>>
+
+entity -create table
+
+using a sequence table (company practice)
+
+scrpts and sql are written in snake_case.
+
+research about primary key and foreign key.
+
+for @JoinColumns: it will always focus on the foreign key as reference for column name.
+
+table names and column names are set to singular by company practice.\
+
+for every entity, the name of the sequence processor must be unique.
+
+*research for types of *cascades*. and also what it does and what it means. 
+
+
 
 
 
@@ -14,7 +50,16 @@ questions:
 ---
 
 
-1. @RestControllerAdvice - allows us to handle exception across all application
+
+
+
+select nextval('<sequence_name>');
+select * <table_name>;
+
+
+
+
+load database tables: `\dt`
 
 
 
@@ -22,19 +67,6 @@ questions:
 
 
 
-422 response code for the product with existing name on the database ( the response message is up to you )
-
-*how to validate request body or request parameters*
-
-
-
->>
-# Questions to ask len on checking meeting:
-1.  About the tests, on which directory should they be put? Because there are some function and variable declartion that are
-instantantiated with protected access modifier or accessible only on package leve. Should they just be instantiated as public
-in order for the test methods to access them? or is there should be a separate spec.file test in the package level of the 
-service in order for the test file to access the objects?
-2. 
 
 
 

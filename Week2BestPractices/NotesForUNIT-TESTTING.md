@@ -265,3 +265,14 @@ sh gradlew test
     assert <expected> == <actual>
     ```
 * The ones or the authors of the `class, code, methods` is the ones to write the test for them.
+
+---
+
+## Advice, Tips, and Company Practice in writting spock unit tests: 
+
+- **Putting test/spec files in the correct directory** - Test specification files are place in: `/test/groovy` directory. But in order to allow access into the same package level of the functions that we want to test, we have to structure our directory to be like the directory structure of the class where the function that we want to test are located. Note: *You have to structure the test with the same directory structure: its just like saying that the test is on the same directory as the class it is focused to test.
+
+<img src=resource/img1.png>
+<img src=resource/img2.png>
+
+- **Only test the methods that are exposed *(public)* in a service class or any class.**

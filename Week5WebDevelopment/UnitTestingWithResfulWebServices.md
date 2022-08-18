@@ -38,3 +38,4 @@ class ProductServiceSpec extends Specification {
 }
 
 ```
+- `@RestControllerAdvice` - allows us to handle exception across all application.
