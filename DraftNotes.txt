@@ -2,7 +2,7 @@
 ---
 
 
-1. @RestControllerAdvice - allows us to handle exception across all application
+
 
 
 422 response code for the product with existing name on the database ( the response message is up to you )
@@ -47,7 +47,7 @@ for every entity, the name of the sequence processor must be unique.
 
 
 
----
+---✅↓⇩
 
 
 
@@ -64,6 +64,42 @@ load database tables: `\dt`
 
 
 
+insert into product(nextval('product_sequence'), 'test', 'Product', 100, 9.0);
+
+or  
+
+insert into product (nextval('product_sequence'), 'test', 'Product', 100, 9.0),
+(nextval('product_sequence'), 'test', 'Product', 100, 9.0);
+
+note: you can use commma to separate 2 rows of data to insert into the database as shown above.^
+
+
+offset = more of like page, and it starts with 0.
+max = maximum of items on a page loaded.
+
+by company practice: creating the the interface for PagingAndSorting must on the package level.
+
+SELECT * FROM products where description like '%<word-to-filter>%;
+
+limit acts like the max in the querry pagination
+
+
+select count(*) from product;
+
+
+by - create *where clause:
+
+transactional annotation makes use of the begin and rollback in database level operation. It performs rollback when there is an 
+exception thrown inside the function. This is done in order to protect the data when there is an exception 
+that occured when performing the actions inside the function. the @transaction just ends when the save() is envoked.
+
+note: study about >> begin, commit and rollback in operating on database level.
+
+Note: company practice is to avoid making too much trips to the database;
+
+Note: remember in making functions, it must be testable.
+
+Note: if you are taking many trips to the database and changing data, use @Transactional
 
 
 
@@ -72,8 +108,15 @@ load database tables: `\dt`
 
 
 
+## Everything that gone wrong:
+1. Order Calculator
+2. Order Product Modifier 
+3. 
 
+sudo -u postgres psql 
 
+pg_dump -U postgres -h localhost -d order_management > sample.psql
+pg_dump -U <user_name> -h localhost -d (db_name) > (filename).psql
 
 
 

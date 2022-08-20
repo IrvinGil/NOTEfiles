@@ -110,3 +110,7 @@ This will load the following fields:
 ```build.gradle
 implementation 'com.google.guava:guava:31.1-jre'
 ```
+
+## Spring Annotation Notes in Designing Restful Web APIs.
+
+- `@RestControllerAdvice` : allows us to handle exception across all applications.

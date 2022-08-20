@@ -38,4 +38,6 @@ class ProductServiceSpec extends Specification {
 }
 
 ```
-- `@RestControllerAdvice` - allows us to handle exception across all application.
+- splice functions into small unit and somehow separate it into another class to keep the methods small
+and unit test can be easily made into the function.
+- unit test also serve as a documentation, so make the unit test name as descriptive as possible.
