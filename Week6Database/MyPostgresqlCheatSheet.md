@@ -207,7 +207,8 @@ FROM table;
 
 - Query data using the LIKE operator:
 ```PostgreSQL
-Query data using the LIKE operator:
+SELECT * FROM table_name
+WHERE column LIKE '%value%'
 ```
 
 - Query data using the BETWEEN operator:

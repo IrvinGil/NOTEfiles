@@ -44,6 +44,11 @@ INSERT INTO product (nextval('product_sequence'), 'test', 'productDescription', 
 ```PostgreSQL
 SELECT * FROM products WHERE  DESCRIPTION LIKE '%<word-to-filter>%;
 ```
+- Querry for selecting date with specified range:
+```PostgreSQL
+SELECT * FROM orders WHERE date_ordered BETWEEN '2022-08-18' AND '2022-08-20';
+
+```
 
 ## Custom Querry code using Spring Data JPA:
 - Sample Querry code for getting a list of the id from the database where the product.name has a LIKE content and the product.id is notEqual (<>) to the passed id:

@@ -1,126 +1,106 @@
 
----
-
-
-
-
-
-422 response code for the product with existing name on the database ( the response message is up to you )
-
-
-
-- The spec/test classes that are in the /test directory contains tests for classes with public
-access modifiers. But you can also add test for the methods that are have package level access
-modifiers and just put the spec/test file on the same package directory.
-
-*how to validate request body or request parameters*
-Answer: @NotNull //Bean Validation package
-
-
-advice:
-- splice functions into small unit and somehow separate it into another class to keep the methods small
-and unit test can be easily made into the function.
-- unit test also serve as a documentation, so make the unit test name as descriptive as possible.
-- 
-
->>>>>>>
-
-entity -create table
-
-using a sequence table (company practice)
-
-scrpts and sql are written in snake_case.
-
-research about primary key and foreign key.
-
-for @JoinColumns: it will always focus on the foreign key as reference for column name.
-
-table names and column names are set to singular by company practice.\
-
-for every entity, the name of the sequence processor must be unique.
-
-*research for types of *cascades*. and also what it does and what it means. 
-
-
-
-
-
-
-
----✅↓⇩
-
-
-
-
-
-select nextval('<sequence_name>');
-select * <table_name>;
-
-
-
-
-load database tables: `\dt`
-
-
-
-
-insert into product(nextval('product_sequence'), 'test', 'Product', 100, 9.0);
-
-or  
-
-insert into product (nextval('product_sequence'), 'test', 'Product', 100, 9.0),
-(nextval('product_sequence'), 'test', 'Product', 100, 9.0);
-
-note: you can use commma to separate 2 rows of data to insert into the database as shown above.^
-
-
-offset = more of like page, and it starts with 0.
-max = maximum of items on a page loaded.
-
-by company practice: creating the the interface for PagingAndSorting must on the package level.
-
-SELECT * FROM products where description like '%<word-to-filter>%;
-
-limit acts like the max in the querry pagination
-
-
-select count(*) from product;
-
-
-by - create *where clause:
-
-transactional annotation makes use of the begin and rollback in database level operation. It performs rollback when there is an 
-exception thrown inside the function. This is done in order to protect the data when there is an exception 
-that occured when performing the actions inside the function. the @transaction just ends when the save() is envoked.
-
-note: study about >> begin, commit and rollback in operating on database level.
-
-Note: company practice is to avoid making too much trips to the database;
-
-Note: remember in making functions, it must be testable.
-
-Note: if you are taking many trips to the database and changing data, use @Transactional
-
-
-
-
-
-
-
-
-## Everything that gone wrong:
-1. Order Calculator
-2. Order Product Modifier 
-3. 
-
-sudo -u postgres psql 
-
 pg_dump -U postgres -h localhost -d order_management > sample.psql
 pg_dump -U <user_name> -h localhost -d (db_name) > (filename).psql
 
 
+---
+
+1. routing
+2. exporting components
+3. binding and NgModel 
+4. directives
+    -ngIf
+    -ngFor
+    -ngSwitch
+    -ngClass: injects css class into html div.
+    -ngStyle: inject explicit declaration of the style.
+    -Custom Directive
+
+5. Forms
+    - subscribable (subscribe):
+6. Asynchronous functions:
 
 
 
 
+
+
+
+
+
+- to use components, you must also import them on the routing.ts (not sure sa name sa file tho)
+- use of *routes is to assign a page to a specific url. And *routes are structures like an array and can have multiple
+values (paths to assign). Located on /test/app-routing.module.ts
+- routes must have a unique path or else it will conflict.
+- when creating new directory --
+- for routing, we must use the selector router outlet.
+````
+
+```
+- ngModule/ featureModule: acts like a package for your component.
+```
+import {NgModule} from '@angular/core';
+```
+- best practice: every page must be routed.
+- angular components are reusable.
+- you must also to export the compoent on its side to be accessible and reusable throughout the application.
+- "[]" means input and "()" means output.
+- Property binding [ ] lets you use the property value in a template expression.
+- Interpolation {{ }} lets you render the property value as text.
+- ''_false or anything that javascript evaluate as empty is considered null.
+- adding the $ symbol ahead of an expression makes angular evaluate it first.
+- For research on different validation type search : Angular Validation.
+- subscribable accepts 3 arguments:
+    - on success
+    - on error
+    - on complete
+    note: callbacks can be functions in the .ts file.
+- Search about ajax: asynchronouse javascript and xml.
+- search about typescript observable...\
+- The @Input() decorator indicates that the property value passes in from the component's parent, ProductListComponent.
+- ActivatedRoute is specific to each component that the Angular Router loads. ActivatedRoute contains information about the route and the route's parameters.
+By injecting ActivatedRoute, you are configuring the component to use a service. The Managing Data step covers services in more detail.
+- Note: if you are using intelliJ as an ide for angular. you also get auto importation when you are instantiating 
+and object into your class without importing it.
+
+- when creating a new component, angular will automatically include it's declaration under the `declartions` of 
+`app.module.ts`.
+
+- CLI command to run angular app in a custom port: `ng serve --port <custom-port-number>`
+
+>>>>>>>>>>>>
+Observable vs Promise:
+- observable can return multiple values whereas promise can only return one.
+- observable behave like arrays; 
+
+
+Promises are one way used in dealing with asynchronous functions in javascript.
+- the response to the promise is called the resolve.
+- 
+
+
+Observable : an observable is a producer of multiple values "pushing" them to observers (consumers).
+- subscription in an observable will last until you tell it to "unsubscribe".
+- SUBJECT: another type of observable that allows values to be multicasted to many observers.
+- 
+
+* note: use a subject when you have multiple observables and you want updates as they come.
+* note: use a behavior-subject when you have multiple observers and you want the latest updates
+as soon as they subscribe.
+example:
+```
+1.import{Observable}from'rxjs';
+2.
+3.const weather new Observable(subscriber=>{
+4. console.log('Iam the weather.Iam being observed now'),
+5. subscriber.next('rain');
+6. subscriber.next('sun');
+7.subscriber.next('rain');
+8.});
+9.
+10.console.log('Let's observe the weather.');
+11. weather.subscribe(x=>{
+12. console.log(x);
+13.});
+```
 
