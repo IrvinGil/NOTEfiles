@@ -45,6 +45,9 @@ import {NgModule} from '@angular/core';
 - angular components are reusable.
 - you must also to export the compoent on its side to be accessible and reusable throughout the application.
 - "[]" means input and "()" means output.
+    - [] is property binding: and it is used to send values from the component into the view/HTML.
+    - () is event binding: and it is used to send values from the view/HTML into the component.
+
 - Property binding [ ] lets you use the property value in a template expression.
 - Interpolation {{ }} lets you render the property value as text.
 - ''_false or anything that javascript evaluate as empty is considered null.
@@ -76,6 +79,7 @@ Observable vs Promise:
 
 Promises are one way used in dealing with asynchronous functions in javascript.
 - the response to the promise is called the resolve.
+- return one action (resolve/reject).
 - 
 
 
@@ -104,3 +108,21 @@ example:
 13.});
 ```
 
+application for promise:
+- deals with asynchronous functions.
+- if you want a function to do something and you dont want to be stuck on one action.
+- sample of this is loading a page that waits for the response of an API.
+
+- ngModel is used for two-way data binding. There is also #PropertyBinding which sends 
+data from component -> UI. And also #EventBinding which sends data from UI -> component.
+
+note:
+- another way of using terniary operators in using ngClass;
+```
+<!--<div class="download"
+[ngClass]="{'downloading':downloadStatus ==1,'downloaded'}"></div>-->
+
+div class="download"
+[ngClass]="downloadStatus ==1?'downloading':
+downloadStatus ==2?'downloaded': '' "></div>
+```
