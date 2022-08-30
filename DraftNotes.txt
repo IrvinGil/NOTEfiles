@@ -2,127 +2,27 @@
 pg_dump -U postgres -h localhost -d order_management > sample.psql
 pg_dump -U <user_name> -h localhost -d (db_name) > (filename).psql
 
-
----
-
-1. routing
-2. exporting components
-3. binding and NgModel 
-4. directives
-    -ngIf
-    -ngFor
-    -ngSwitch
-    -ngClass: injects css class into html div.
-    -ngStyle: inject explicit declaration of the style.
-    -Custom Directive
-
-5. Forms
-    - subscribable (subscribe):
-6. Asynchronous functions:
-
-
-
-
-
-
-
-
-
-- to use components, you must also import them on the routing.ts (not sure sa name sa file tho)
-- use of *routes is to assign a page to a specific url. And *routes are structures like an array and can have multiple
-values (paths to assign). Located on /test/app-routing.module.ts
-- routes must have a unique path or else it will conflict.
-- when creating new directory --
-- for routing, we must use the selector router outlet.
-````
-
-```
-- ngModule/ featureModule: acts like a package for your component.
-```
-import {NgModule} from '@angular/core';
-```
-- best practice: every page must be routed.
-- angular components are reusable.
-- you must also to export the compoent on its side to be accessible and reusable throughout the application.
-- "[]" means input and "()" means output.
-    - [] is property binding: and it is used to send values from the component into the view/HTML.
-    - () is event binding: and it is used to send values from the view/HTML into the component.
-
-- Property binding [ ] lets you use the property value in a template expression.
-- Interpolation {{ }} lets you render the property value as text.
-- ''_false or anything that javascript evaluate as empty is considered null.
-- adding the $ symbol ahead of an expression makes angular evaluate it first.
-- For research on different validation type search : Angular Validation.
-- subscribable accepts 3 arguments:
-    - on success
-    - on error
-    - on complete
-    note: callbacks can be functions in the .ts file.
-- Search about ajax: asynchronouse javascript and xml.
-- search about typescript observable...\
-- The @Input() decorator indicates that the property value passes in from the component's parent, ProductListComponent.
-- ActivatedRoute is specific to each component that the Angular Router loads. ActivatedRoute contains information about the route and the route's parameters.
-By injecting ActivatedRoute, you are configuring the component to use a service. The Managing Data step covers services in more detail.
-- Note: if you are using intelliJ as an ide for angular. you also get auto importation when you are instantiating 
-and object into your class without importing it.
-
-- when creating a new component, angular will automatically include it's declaration under the `declartions` of 
-`app.module.ts`.
-
-- CLI command to run angular app in a custom port: `ng serve --port <custom-port-number>`
-
 >>>>>>>>>>>>
-Observable vs Promise:
-- observable can return multiple values whereas promise can only return one.
-- observable behave like arrays; 
 
 
-Promises are one way used in dealing with asynchronous functions in javascript.
-- the response to the promise is called the resolve.
-- return one action (resolve/reject).
-- 
 
 
-Observable : an observable is a producer of multiple values "pushing" them to observers (consumers).
-- subscription in an observable will last until you tell it to "unsubscribe".
-- SUBJECT: another type of observable that allows values to be multicasted to many observers.
-- 
 
-* note: use a subject when you have multiple observables and you want updates as they come.
-* note: use a behavior-subject when you have multiple observers and you want the latest updates
-as soon as they subscribe.
-example:
-```
-1.import{Observable}from'rxjs';
-2.
-3.const weather new Observable(subscriber=>{
-4. console.log('Iam the weather.Iam being observed now'),
-5. subscriber.next('rain');
-6. subscriber.next('sun');
-7.subscriber.next('rain');
-8.});
-9.
-10.console.log('Let's observe the weather.');
-11. weather.subscribe(x=>{
-12. console.log(x);
-13.});
-```
 
-application for promise:
-- deals with asynchronous functions.
-- if you want a function to do something and you dont want to be stuck on one action.
-- sample of this is loading a page that waits for the response of an API.
 
-- ngModel is used for two-way data binding. There is also #PropertyBinding which sends 
-data from component -> UI. And also #EventBinding which sends data from UI -> component.
 
-note:
-- another way of using terniary operators in using ngClass;
-```
-<!--<div class="download"
-[ngClass]="{'downloading':downloadStatus ==1,'downloaded'}"></div>-->
+- Case: Passing data from child_component to parent_component.
 
-div class="download"
-[ngClass]="downloadStatus ==1?'downloading':
-downloadStatus ==2?'downloaded': '' "></div>
-```
+
+
+
+
+
+
+
+
+
+- Case: Passing data on non related components.
+
+
+
