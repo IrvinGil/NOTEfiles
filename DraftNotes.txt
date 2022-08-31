@@ -10,19 +10,3 @@ pg_dump -U <user_name> -h localhost -d (db_name) > (filename).psql
 
 
 
-
-- Case: Passing data from child_component to parent_component.
-
-
-
-
-
-
-
-
-
-
-- Case: Passing data on non related components.
-
-
-
