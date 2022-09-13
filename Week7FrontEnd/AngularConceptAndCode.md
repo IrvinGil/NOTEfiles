@@ -83,6 +83,8 @@ export class Child2Component implements OnInit {
 
 1. Example 1: Displaying HTML element according to a reference boolean variable in the .ts class. The output of this is that the `h2` element will be visible if `displayName = true` and not if `false`. 
 
+>Note: You must the the component's component reference in the app.module.ts in order to use ngIf directive.
+
 ```Typescript
 import { Component , OnInit } from ' @ angular / core ' ;
 @Component ( {

@@ -3,10 +3,20 @@ pg_dump -U postgres -h localhost -d order_management > sample.psql
 pg_dump -U <user_name> -h localhost -d (db_name) > (filename).psql
 
 >>>>>>>>>>>>
+Note: use inheritance for the javascript for the front end -> add employee component, and update employee component.
 
 
+Draft notes (SOLID Principles) -> Froilan Co  <Sept 8>
 
-
+# Inheritance best practice:
+- Inheritance is utilized for:
+    - polymorphism.
+    - code reuse
+    - relationship
+- inheritance should be used for polymorphism.
+- Problems with inheritance:
+    - Fragile base class problem: changes in the super class can destroy the behavior of the child classes.
+    - 
 
 
 
